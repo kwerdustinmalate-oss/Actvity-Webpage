@@ -1,0 +1,79 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    cursor: url(normal.png), auto;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    overflow: hidden;
+}
+
+
+/* =========================
+   BACKGROUND
+   ========================= */
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #e50914;
+    z-index: -1;
+}
+
+
+/* Black diagonal shape */
+
+.background::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 120%;
+    background: #111;
+    transform: rotate(-12deg);
+    right: -20%;
+    top: -10%;
+}
+
+
+/* =========================
+   PAGES
+   ========================= */
+
+.page {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page.active {
+    display: block;
+}
+
+
+/* =========================
+   MENU IMAGE
+   ========================= */
+
+.menu-image {
+    position: absolute;
+    width: 45%;
+    max-width: 500px;
+    right: 5%;
+    bottom: 5%;
+
+    max-height: 80vh;
+    object-fit: contain;
+
+    z-index:
+
+    button, a{cursor: url(normal.png), pointer;
+
+    }
