@@ -6,7 +6,7 @@
 }
 
 body {
-    cursor: url(normal.png), auto;
+    cursor: url("Assets/Cursor/normal.png), auto;
     font-family: Arial, sans-serif;
     background: #111;
     color: white;
@@ -14,9 +14,7 @@ body {
 }
 
 
-/* =========================
-   BACKGROUND
-   ========================= */
+
 
 .background {
     position: fixed;
@@ -27,7 +25,7 @@ body {
 }
 
 
-/* Black diagonal shape */
+
 
 .background::after {
     content: "";
@@ -41,9 +39,6 @@ body {
 }
 
 
-/* =========================
-   PAGES
-   ========================= */
 
 .page {
     display: none;
@@ -58,9 +53,7 @@ body {
 }
 
 
-/* =========================
-   MENU IMAGE
-   ========================= */
+
 
 .menu-image {
     position: absolute;
