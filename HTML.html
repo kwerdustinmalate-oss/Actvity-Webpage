@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-screen="home">
+
+<!-- INTRO SCREEN -->
+<div id="intro">
+  <h1>CLICK TO ENTER</h1>
+</div>
+
+<!-- MENU TRANSITION IMAGES -->
+<img class="menu-art" id="art-home"     src="home.jpg"    alt="">
+<img class="menu-art" id="art-projects" src="about.jpg"   alt="">
+<img class="menu-art" id="art-skills"   src="skills.jpg"  alt="">
+<img class="menu-art" id="art-about"    src="about.jpg"   alt="">
+
+<!-- BACKGROUND -->
+<div id="bg"></div>
+<div id="slash"></div>
+
+<!-- SCREEN WIPE -->
+<div id="wipe">
+  <div class="pane p1"></div>
+  <div class="pane p2"></div>
+  <div class="pane p3"></div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app">
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="tag">Webpage //Kwer Dustin</div>
+    <div class="tag white">IT Student</div>
+  </div>
+
+  <!-- HOME SCREEN -->
+  <div class="screen active" id="home">
+    <p class="eyebrow">WELCOME TO MY SITE</p>
+    <h1 class="big-name">Everyone</h1>
+    <p class="tagline">1st year IT student. Doing some basic repository things and prototype</p>
+
+    <div class="menu">
+      <button class="menu-btn selected" data-go="projects">PROJECTS</button>
+      <button class="menu-btn" data-go="skills">SKILLS</button>
+      <button class="menu-btn" data-go="about">ABOUT</button>
+      <button class="menu-btn" data-go="contact">CONTACT</button>
+    </div>
+  </div>
+
+  <!-- PROJECTS SCREEN -->
+  <div class="screen" id="projects">
+    <h2 class="page-title">PROJECTS</h2>
+    <button class="back" data-back>← Back</button>
+
+    <h3 class="section-title">MY WORK</h3>
+    <div class="cards" id="featured-cards"></div>
+
+    <h3 class="section-title" id="repo-title">FAVOURITE GAMES</h3>
+    <p id="repo-status"></p>
+    <div class="cards" id="github-cards"></div>
+  </div>
+
+  <!-- SKILLS SCREEN -->
+  <div class="screen" id="skills">
+    <h2 class="page-title">SKILLS</h2>
+    <button class="back" data-back>← Back</button>
+    <div id="skills-list"></div>
+  </div>
+
+  <!-- ABOUT SCREEN -->
+  <div class="screen" id="about">
+    <h2 class="page-title">ABOUT</h2>
+    <button class="back" data-back>← Back</button>
+
+    <div class="paper">
+      <p>Hi! I'm a 1st year <strong>IT student</strong>. I'm learning to code and I love trying practice tutorials. When I'm not studying xD, I play games and work on my former classmate dev project.</p>
+    </div>
+
+    <img src="me.jpg" alt="My Photo" class="about-photo">
+  </div>
+
+  <!-- CONTACT SCREEN -->
+  <div class="screen" id="contact">
+    <h2 class="page-title">CONTACT</h2>
+    <button class="back" data-back>← Back</button>
+
+    <div class="paper">
+      <p>Send me a message or find me here:</p>
+    </div>
+
+    <div class="links">
+      <a href="mailto:kwerdustin.malate@cvsu.edu.ph">📧 CVSU Email</a>
+      <a href="https://github.com/kwerdustinmalate-oss" target="_blank">💻 GitHub</a>
+      <a href="https://www.facebook.com/kwerdustin.malate.3" target="_blank">🔗 Facebook</a>
+      <a href="https://www.instagram.com/kiyotaka__sento?stkn=ZDNrY2l2c2l1YWs0" target="_blank">📷 Instagram</a>
+    </div>
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div id="bottom">
+    <span>↑↓ Move</span>
+    <span>Enter Select</span>
+    <span>Esc Back</span>
+    <span id="clock"></span>
+  </div>
+
+</div>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="music" loop>
+  <source src="background.mp3" type="audio/mpeg">
+</audio>
+
+<script src="Java.js" defer></script>
+</body>
+</html>
